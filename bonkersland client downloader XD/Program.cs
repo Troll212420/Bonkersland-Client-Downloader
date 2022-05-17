@@ -39,6 +39,8 @@ namespace bonkersland_client_downloader_XD
             string zipFilePath = @"BonkerslandClient.zip";
             ZipFile.ExtractToDirectory(zipFilePath, extractionPath);
 
+            // delete the client .zip file after it gets installed to save disk space
+            
             Console.WriteLine("Clearing temporary files...");
 
             File.Delete(@"BonkerslandClient.zip");
